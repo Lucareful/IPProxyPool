@@ -1,0 +1,338 @@
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 202.104.113.36:23654
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 112.231.214.137:8118
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 77.85.169.51:36385
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.220.206.110:59570
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.239.248.206:808
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.253.235.57:9999
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 106.14.123.7:5739
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.180.177.184:8060
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 140.143.237.40:80
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 111.231.140.226:8080
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 112.231.214.137:8118
+2019-10-27 16:32:57 connectionpool.py [line:959] DEBUG: Starting new HTTPS connection (1): www.xicidaili.com:443
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): www.ip3366.net:80
+2019-10-27 16:32:57 connectionpool.py [line:959] DEBUG: Starting new HTTPS connection (1): list.proxylistplus.com:443
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): www.66ip.cn:80
+2019-10-27 16:32:57 connectionpool.py [line:437] DEBUG: http://114.253.235.57:9999 "GET http://httpbin.org/get HTTP/1.1" 200 288
+2019-10-27 16:32:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.253.235.57:9999
+2019-10-27 16:32:58 connectionpool.py [line:437] DEBUG: http://140.143.237.40:80 "GET http://httpbin.org/get HTTP/1.1" 200 295
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 140.143.237.40:80
+2019-10-27 16:32:58 connectionpool.py [line:437] DEBUG: http://114.253.235.57:9999 "GET http://httpbin.org/get HTTP/1.1" 200 295
+2019-10-27 16:32:58 httpbin_validator.py [line:89] DEBUG: {'ip': '114.253.235.57', 'port': '9999', 'protocol': 2, 'nick_type': 2, 'speed': 0.31, 'area': 'SSL高匿_北京市联通', 'score': 50, 'disable_domains': []}
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 171.6.168.183:8213
+2019-10-27 16:32:58 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 16:32:58 run_spiders.py [line:85] ERROR: maximum recursion depth exceeded while calling a Python object
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\core\proxy_spider\run_spiders.py", line 75, in __execute_one_spider_task
+    for proxy in spider.get_proxies():
+  File "E:\IPPeoxyPool\core\proxy_spider\base_spider.py", line 79, in get_proxies
+    page = self.get_page_from_url(url)
+  File "E:\IPPeoxyPool\core\proxy_spider\base_spider.py", line 50, in get_page_from_url
+    response = requests.get(url, headers=get_request_headers())
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connection.py", line 370, in connect
+    cert_reqs=resolve_cert_reqs(self.cert_reqs),
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\util\ssl_.py", line 273, in create_urllib3_context
+    context.options |= options
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  [Previous line repeated 310 more times]
+RecursionError: maximum recursion depth exceeded while calling a Python object
+2019-10-27 16:32:58 connectionpool.py [line:437] DEBUG: http://www.ip3366.net:80 "GET /free/?stype=1&page=1 HTTP/1.1" 200 5671
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 36.25.43.229:9999
+2019-10-27 16:32:58 run_spiders.py [line:85] ERROR: maximum recursion depth exceeded while calling a Python object
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\core\proxy_spider\run_spiders.py", line 75, in __execute_one_spider_task
+    for proxy in spider.get_proxies():
+  File "E:\IPPeoxyPool\core\proxy_spider\base_spider.py", line 79, in get_proxies
+    page = self.get_page_from_url(url)
+  File "E:\IPPeoxyPool\core\proxy_spider\base_spider.py", line 50, in get_page_from_url
+    response = requests.get(url, headers=get_request_headers())
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connection.py", line 370, in connect
+    cert_reqs=resolve_cert_reqs(self.cert_reqs),
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\util\ssl_.py", line 273, in create_urllib3_context
+    context.options |= options
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  [Previous line repeated 310 more times]
+RecursionError: maximum recursion depth exceeded while calling a Python object
+2019-10-27 16:32:58 connectionpool.py [line:437] DEBUG: http://www.66ip.cn:80 "GET /1.html HTTP/1.1" 200 3660
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 106.14.123.7:5739
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 182.53.197.141:30313
+2019-10-27 16:32:58 connectionpool.py [line:437] DEBUG: http://140.143.237.40:80 "GET http://httpbin.org/get HTTP/1.1" 200 266
+2019-10-27 16:32:58 httpbin_validator.py [line:89] DEBUG: {'ip': '140.143.237.40', 'port': '80', 'protocol': 2, 'nick_type': 2, 'speed': 0.84, 'area': 'SSL高匿_北京市腾讯云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 187.7.229.90:8080
+2019-10-27 16:32:58 connectionpool.py [line:437] DEBUG: http://111.231.140.226:8080 "GET http://httpbin.org/get HTTP/1.1" 200 327
+2019-10-27 16:32:58 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 111.231.140.226:8080
+2019-10-27 16:32:59 connectionpool.py [line:437] DEBUG: http://111.231.140.226:8080 "GET http://httpbin.org/get HTTP/1.1" 200 324
+2019-10-27 16:32:59 httpbin_validator.py [line:89] DEBUG: {'ip': '111.231.140.226', 'port': '8080', 'protocol': 2, 'nick_type': 2, 'speed': 0.53, 'area': '高匿_上海市腾讯云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:32:59 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 82.204.181.199:8080
+2019-10-27 16:32:59 httpbin_validator.py [line:89] DEBUG: {'ip': '106.14.123.7', 'port': '5739', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': 'SSL高匿_上海市阿里云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:32:59 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 42.56.25.191:8080
+2019-10-27 16:33:00 httpbin_validator.py [line:89] DEBUG: {'ip': '112.231.214.137', 'port': '8118', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '山东省济南市', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:00 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 104.248.83.176:3128
+2019-10-27 16:33:01 connectionpool.py [line:437] DEBUG: http://182.53.197.141:30313 "GET http://httpbin.org/get HTTP/1.1" 200 315
+2019-10-27 16:33:02 connectionpool.py [line:959] DEBUG: Starting new HTTPS connection (1): www.kuaidaili.com:443
+2019-10-27 16:33:02 run_spiders.py [line:85] ERROR: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\core\proxy_spider\run_spiders.py", line 75, in __execute_one_spider_task
+    for proxy in spider.get_proxies():
+  File "E:\IPPeoxyPool\core\proxy_spider\base_spider.py", line 79, in get_proxies
+    page = self.get_page_from_url(url)
+  File "E:\IPPeoxyPool\core\proxy_spider\proxy_spiders.py", line 72, in get_page_from_url
+    return super().get_page_from_url(url)
+  File "E:\IPPeoxyPool\core\proxy_spider\base_spider.py", line 50, in get_page_from_url
+    response = requests.get(url, headers=get_request_headers())
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\connection.py", line 370, in connect
+    cert_reqs=resolve_cert_reqs(self.cert_reqs),
+  File "E:\IPPeoxyPool\venv\lib\site-packages\urllib3\util\ssl_.py", line 273, in create_urllib3_context
+    context.options |= options
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  File "D:\Python\lib\ssl.py", line 465, in options
+    super(SSLContext, SSLContext).options.__set__(self, value)
+  [Previous line repeated 309 more times]
+RecursionError: maximum recursion depth exceeded
+2019-10-27 16:33:03 connectionpool.py [line:437] DEBUG: http://82.204.181.199:8080 "GET http://httpbin.org/get HTTP/1.1" 200 486
+2019-10-27 16:33:03 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 82.204.181.199:8080
+2019-10-27 16:33:04 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 182.53.197.141:30313
+2019-10-27 16:33:06 connectionpool.py [line:437] DEBUG: http://82.204.181.199:8080 "GET http://httpbin.org/get HTTP/1.1" 200 567
+2019-10-27 16:33:07 httpbin_validator.py [line:89] DEBUG: {'ip': '82.204.181.199', 'port': '8080', 'protocol': 2, 'nick_type': 2, 'speed': 3.88, 'area': '俄罗斯', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:07 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 77.85.169.51:36385
+2019-10-27 16:33:07 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.220.206.110:59570
+2019-10-27 16:33:07 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.239.248.206:808
+2019-10-27 16:33:07 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.180.177.184:8060
+2019-10-27 16:33:07 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 202.104.113.36:23654
+2019-10-27 16:33:08 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 36.25.43.229:9999
+2019-10-27 16:33:08 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\IPPeoxyPool\core\proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 16:33:08 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 16:33:08] "GET /random HTTP/1.1" 500 -
+2019-10-27 16:33:08 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 16:33:08] "GET /favicon.ico HTTP/1.1" 404 -
+2019-10-27 16:33:09 connectionpool.py [line:437] DEBUG: http://104.248.83.176:3128 "GET http://httpbin.org/get HTTP/1.1" 200 298
+2019-10-27 16:33:09 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 42.56.25.191:8080
+2019-10-27 16:33:09 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 187.7.229.90:8080
+2019-10-27 16:33:10 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 104.248.83.176:3128
+2019-10-27 16:33:10 connectionpool.py [line:437] DEBUG: http://114.239.248.206:808 "GET http://httpbin.org/get HTTP/1.1" 200 326
+2019-10-27 16:33:10 httpbin_validator.py [line:89] DEBUG: {'ip': '114.239.248.206', 'port': '808', 'protocol': 1, 'nick_type': 2, 'speed': 2.83, 'area': '江苏省宿迁市泗阳县', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:10 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 201.236.200.243:8080
+2019-10-27 16:33:11 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 171.6.168.183:8213
+2019-10-27 16:33:14 httpbin_validator.py [line:89] DEBUG: {'ip': '182.53.197.141', 'port': '30313', 'protocol': 0, 'nick_type': -1, 'speed': -1, 'area': '泰国', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:14 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 43.246.139.1:47727
+2019-10-27 16:33:16 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 16:33:16] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 16:33:17 httpbin_validator.py [line:89] DEBUG: {'ip': '103.220.206.110', 'port': '59570', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '亚太地区', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:17 httpbin_validator.py [line:89] DEBUG: {'ip': '119.180.177.184', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_山东省联通', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:17 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 134.175.104.125:8080
+2019-10-27 16:33:17 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 101.255.103.201:53281
+2019-10-27 16:33:17 httpbin_validator.py [line:89] DEBUG: {'ip': '202.104.113.36', 'port': '23654', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': None, 'score': 47, 'disable_domains': []}
+2019-10-27 16:33:17 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 36.7.89.233:8060
+2019-10-27 16:33:17 connectionpool.py [line:437] DEBUG: http://187.7.229.90:8080 "GET http://httpbin.org/get HTTP/1.1" 200 473
+2019-10-27 16:33:17 httpbin_validator.py [line:89] DEBUG: {'ip': '187.7.229.90', 'port': '8080', 'protocol': 1, 'nick_type': 2, 'speed': 8.01, 'area': '巴西', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:17 connectionpool.py [line:437] DEBUG: http://171.6.168.183:8213 "GET http://httpbin.org/get HTTP/1.1" 200 527
+2019-10-27 16:33:17 httpbin_validator.py [line:89] DEBUG: {'ip': '171.6.168.183', 'port': '8213', 'protocol': 1, 'nick_type': 2, 'speed': 6.17, 'area': '泰国', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:18 httpbin_validator.py [line:89] DEBUG: {'ip': '36.25.43.229', 'port': '9999', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': 'SSL高匿_浙江省电信', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:18 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.217.7.253:8060
+2019-10-27 16:33:18 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 16:33:18] "GET /proxies？ HTTP/1.1" 404 -
+2019-10-27 16:33:19 httpbin_validator.py [line:89] DEBUG: {'ip': '42.56.25.191', 'port': '8080', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '辽宁省', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:19 connectionpool.py [line:437] DEBUG: http://101.255.103.201:53281 "GET http://httpbin.org/get HTTP/1.1" 200 312
+2019-10-27 16:33:19 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 101.255.103.201:53281
+2019-10-27 16:33:20 httpbin_validator.py [line:89] DEBUG: {'ip': '77.85.169.51', 'port': '36385', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '保加利亚', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:20 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 223.245.45.167:65309
+2019-10-27 16:33:21 httpbin_validator.py [line:89] DEBUG: {'ip': '104.248.83.176', 'port': '3128', 'protocol': 0, 'nick_type': -1, 'speed': -1, 'area': '北美地区', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:22 connectionpool.py [line:437] DEBUG: http://201.236.200.243:8080 "GET http://httpbin.org/get HTTP/1.1" 200 471
+2019-10-27 16:33:22 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 201.236.200.243:8080
+2019-10-27 16:33:24 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 43.246.139.1:47727
+2019-10-27 16:33:25 connectionpool.py [line:437] DEBUG: http://134.175.104.125:8080 "GET http://httpbin.org/get HTTP/1.1" 200 291
+2019-10-27 16:33:25 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 134.175.104.125:8080
+2019-10-27 16:33:26 connectionpool.py [line:437] DEBUG: http://134.175.104.125:8080 "GET http://httpbin.org/get HTTP/1.1" 200 295
+2019-10-27 16:33:26 httpbin_validator.py [line:89] DEBUG: {'ip': '134.175.104.125', 'port': '8080', 'protocol': 2, 'nick_type': 2, 'speed': 0.68, 'area': '高匿_广东省广州市腾讯云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:27 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 36.7.89.233:8060
+2019-10-27 16:33:28 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.217.7.253:8060
+2019-10-27 16:33:29 httpbin_validator.py [line:89] DEBUG: {'ip': '101.255.103.201', 'port': '53281', 'protocol': 0, 'nick_type': -1, 'speed': -1, 'area': '印度尼西亚', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:30 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 223.245.45.167:65309
+2019-10-27 16:33:32 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 16:33:32] "GET /disable_domain HTTP/1.1" 200 -
+2019-10-27 16:33:32 httpbin_validator.py [line:89] DEBUG: {'ip': '201.236.200.243', 'port': '8080', 'protocol': 0, 'nick_type': -1, 'speed': -1, 'area': '哥伦比亚', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:33 connectionpool.py [line:437] DEBUG: http://223.245.45.167:65309 "GET http://httpbin.org/get HTTP/1.1" 200 324
+2019-10-27 16:33:33 httpbin_validator.py [line:89] DEBUG: {'ip': '223.245.45.167', 'port': '65309', 'protocol': 1, 'nick_type': 2, 'speed': 2.56, 'area': '安徽省蚌埠市', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:34 httpbin_validator.py [line:89] DEBUG: {'ip': '43.246.139.1', 'port': '47727', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '日本', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:34 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.119.230.240:3128
+2019-10-27 16:33:37 httpbin_validator.py [line:89] DEBUG: {'ip': '36.7.89.233', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '安徽省', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:38 httpbin_validator.py [line:89] DEBUG: {'ip': '114.217.7.253', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_江苏省苏州市电信', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:38 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 115.225.152.133:8060
+2019-10-27 16:33:39 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 115.225.152.133:8060
+2019-10-27 16:33:40 httpbin_validator.py [line:89] DEBUG: {'ip': '115.225.152.133', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_浙江省绍兴市电信', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:40 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 60.217.157.165:8060
+2019-10-27 16:33:41 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 16:33:41] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 16:33:41 connectionpool.py [line:437] DEBUG: http://60.217.157.165:8060 "GET http://httpbin.org/get HTTP/1.1" 200 402
+2019-10-27 16:33:41 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 60.217.157.165:8060
+2019-10-27 16:33:41 connectionpool.py [line:437] DEBUG: http://60.217.157.165:8060 "GET http://httpbin.org/get HTTP/1.1" 200 427
+2019-10-27 16:33:41 httpbin_validator.py [line:89] DEBUG: {'ip': '60.217.157.165', 'port': '8060', 'protocol': 2, 'nick_type': 2, 'speed': 0.58, 'area': '山东省威海市', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:41 mongo_pool.py [line:48] WARNING: 已存在的代理：60.217.157.165
+2019-10-27 16:33:41 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 118.212.106.243:9999
+2019-10-27 16:33:46 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.119.230.240:3128
+2019-10-27 16:33:51 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 118.212.106.243:9999
+2019-10-27 16:33:56 httpbin_validator.py [line:89] DEBUG: {'ip': '103.119.230.240', 'port': '3128', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '亚太地区', 'score': 50, 'disable_domains': []}
+2019-10-27 16:33:56 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 77.85.169.51:36385
+2019-10-27 16:34:01 httpbin_validator.py [line:89] DEBUG: {'ip': '118.212.106.243', 'port': '9999', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '江西省新余市', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:01 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 115.206.103.112:8060
+2019-10-27 16:34:05 connectionpool.py [line:437] DEBUG: http://77.85.169.51:36385 "GET http://httpbin.org/get HTTP/1.1" 200 296
+2019-10-27 16:34:06 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 77.85.169.51:36385
+2019-10-27 16:34:11 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 115.206.103.112:8060
+2019-10-27 16:34:17 connectionpool.py [line:437] DEBUG: http://77.85.169.51:36385 "GET http://httpbin.org/get HTTP/1.1" 200 305
+2019-10-27 16:34:18 httpbin_validator.py [line:89] DEBUG: {'ip': '77.85.169.51', 'port': '36385', 'protocol': 2, 'nick_type': 2, 'speed': 12.07, 'area': '保加利亚', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:18 mongo_pool.py [line:48] WARNING: 已存在的代理：77.85.169.51
+2019-10-27 16:34:18 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.220.206.110:59570
+2019-10-27 16:34:21 httpbin_validator.py [line:89] DEBUG: {'ip': '115.206.103.112', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_浙江省杭州市电信', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:21 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 112.231.214.137:8118
+2019-10-27 16:34:22 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 112.231.214.137:8118
+2019-10-27 16:34:22 httpbin_validator.py [line:89] DEBUG: {'ip': '112.231.214.137', 'port': '8118', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '山东省济南市', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:22 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.180.142.153:8060
+2019-10-27 16:34:28 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.220.206.110:59570
+2019-10-27 16:34:32 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.180.142.153:8060
+2019-10-27 16:34:38 httpbin_validator.py [line:89] DEBUG: {'ip': '103.220.206.110', 'port': '59570', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '亚太地区', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:38 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 176.120.37.114:42915
+2019-10-27 16:34:42 httpbin_validator.py [line:89] DEBUG: {'ip': '119.180.142.153', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_山东省联通', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:42 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 49.76.83.128:8118
+2019-10-27 16:34:42 connectionpool.py [line:437] DEBUG: http://49.76.83.128:8118 "GET http://httpbin.org/get HTTP/1.1" 200 296
+2019-10-27 16:34:42 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 49.76.83.128:8118
+2019-10-27 16:34:42 httpbin_validator.py [line:89] DEBUG: {'ip': '49.76.83.128', 'port': '8118', 'protocol': 0, 'nick_type': -1, 'speed': -1, 'area': '高匿_江苏省无锡市电信', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:42 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 118.24.99.11:80
+2019-10-27 16:34:44 connectionpool.py [line:437] DEBUG: http://176.120.37.114:42915 "GET http://httpbin.org/get HTTP/1.1" 200 288
+2019-10-27 16:34:45 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 176.120.37.114:42915
+2019-10-27 16:34:46 connectionpool.py [line:437] DEBUG: http://176.120.37.114:42915 "GET http://httpbin.org/get HTTP/1.1" 200 324
+2019-10-27 16:34:47 httpbin_validator.py [line:89] DEBUG: {'ip': '176.120.37.114', 'port': '42915', 'protocol': 2, 'nick_type': 2, 'speed': 2.71, 'area': '乌克兰', 'score': 50, 'disable_domains': []}
+2019-10-27 16:34:47 mongo_pool.py [line:48] WARNING: 已存在的代理：176.120.37.114
+2019-10-27 16:34:47 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.98.79.66:36598
+2019-10-27 16:34:50 connectionpool.py [line:437] DEBUG: http://118.24.99.11:80 "GET http://httpbin.org/get HTTP/1.1" 200 292
+2019-10-27 16:34:50 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 118.24.99.11:80
+2019-10-27 16:34:57 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 103.98.79.66:36598
+2019-10-27 16:35:00 connectionpool.py [line:437] DEBUG: http://118.24.99.11:80 "GET http://httpbin.org/get HTTP/1.1" 200 285
+2019-10-27 16:35:00 httpbin_validator.py [line:89] DEBUG: {'ip': '118.24.99.11', 'port': '80', 'protocol': 2, 'nick_type': 2, 'speed': 9.77, 'area': '高匿_四川省成都市腾讯云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:00 mongo_pool.py [line:48] WARNING: 已存在的代理：118.24.99.11
+2019-10-27 16:35:00 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 47.107.126.7:8888
+2019-10-27 16:35:07 httpbin_validator.py [line:89] DEBUG: {'ip': '103.98.79.66', 'port': '36598', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '亚太地区', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:07 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 171.6.168.183:8213
+2019-10-27 16:35:09 connectionpool.py [line:437] DEBUG: http://47.107.126.7:8888 "GET http://httpbin.org/get HTTP/1.1" 200 306
+2019-10-27 16:35:09 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 47.107.126.7:8888
+2019-10-27 16:35:15 connectionpool.py [line:437] DEBUG: http://47.107.126.7:8888 "GET http://httpbin.org/get HTTP/1.1" 200 263
+2019-10-27 16:35:15 httpbin_validator.py [line:89] DEBUG: {'ip': '47.107.126.7', 'port': '8888', 'protocol': 2, 'nick_type': 2, 'speed': 5.49, 'area': '广东省深圳市', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:15 mongo_pool.py [line:46] INFO: 插入新的代理47.107.126.7
+2019-10-27 16:35:15 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.239.248.206:808
+2019-10-27 16:35:17 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 171.6.168.183:8213
+2019-10-27 16:35:19 connectionpool.py [line:437] DEBUG: http://114.239.248.206:808 "GET http://httpbin.org/get HTTP/1.1" 200 321
+2019-10-27 16:35:19 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.239.248.206:808
+2019-10-27 16:35:21 connectionpool.py [line:437] DEBUG: http://114.239.248.206:808 "GET http://httpbin.org/get HTTP/1.1" 200 305
+2019-10-27 16:35:21 httpbin_validator.py [line:89] DEBUG: {'ip': '114.239.248.206', 'port': '808', 'protocol': 2, 'nick_type': 2, 'speed': 1.85, 'area': '江苏省宿迁市泗阳县', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:21 mongo_pool.py [line:48] WARNING: 已存在的代理：114.239.248.206
+2019-10-27 16:35:21 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.253.235.57:9999
+2019-10-27 16:35:21 connectionpool.py [line:437] DEBUG: http://114.253.235.57:9999 "GET http://httpbin.org/get HTTP/1.1" 200 320
+2019-10-27 16:35:21 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 114.253.235.57:9999
+2019-10-27 16:35:21 connectionpool.py [line:437] DEBUG: http://114.253.235.57:9999 "GET http://httpbin.org/get HTTP/1.1" 200 291
+2019-10-27 16:35:21 httpbin_validator.py [line:89] DEBUG: {'ip': '114.253.235.57', 'port': '9999', 'protocol': 2, 'nick_type': 2, 'speed': 0.32, 'area': 'SSL高匿_北京市联通', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:21 mongo_pool.py [line:48] WARNING: 已存在的代理：114.253.235.57
+2019-10-27 16:35:21 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 106.14.123.7:5739
+2019-10-27 16:35:22 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 106.14.123.7:5739
+2019-10-27 16:35:23 httpbin_validator.py [line:89] DEBUG: {'ip': '106.14.123.7', 'port': '5739', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': 'SSL高匿_上海市阿里云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:23 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.180.177.184:8060
+2019-10-27 16:35:27 httpbin_validator.py [line:89] DEBUG: {'ip': '171.6.168.183', 'port': '8213', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '泰国', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:27 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 188.186.184.42:53281
+2019-10-27 16:35:33 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.180.177.184:8060
+2019-10-27 16:35:37 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 188.186.184.42:53281
+2019-10-27 16:35:43 httpbin_validator.py [line:89] DEBUG: {'ip': '119.180.177.184', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_山东省联通', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:43 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): www.ip3366.net:80
+2019-10-27 16:35:43 connectionpool.py [line:437] DEBUG: http://www.ip3366.net:80 "GET /free/?stype=1&page=2 HTTP/1.1" 200 5551
+2019-10-27 16:35:43 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 140.143.237.40:80
+2019-10-27 16:35:44 connectionpool.py [line:437] DEBUG: http://140.143.237.40:80 "GET http://httpbin.org/get HTTP/1.1" 200 279
+2019-10-27 16:35:44 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 140.143.237.40:80
+2019-10-27 16:35:46 connectionpool.py [line:437] DEBUG: http://140.143.237.40:80 "GET http://httpbin.org/get HTTP/1.1" 200 288
+2019-10-27 16:35:46 httpbin_validator.py [line:89] DEBUG: {'ip': '140.143.237.40', 'port': '80', 'protocol': 2, 'nick_type': 2, 'speed': 1.61, 'area': 'SSL高匿_北京市腾讯云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:46 mongo_pool.py [line:48] WARNING: 已存在的代理：140.143.237.40
+2019-10-27 16:35:46 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 111.231.140.226:8080
+2019-10-27 16:35:46 connectionpool.py [line:437] DEBUG: http://111.231.140.226:8080 "GET http://httpbin.org/get HTTP/1.1" 200 325
+2019-10-27 16:35:46 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 111.231.140.226:8080
+2019-10-27 16:35:47 connectionpool.py [line:437] DEBUG: http://111.231.140.226:8080 "GET http://httpbin.org/get HTTP/1.1" 200 305
+2019-10-27 16:35:47 httpbin_validator.py [line:89] DEBUG: {'ip': '111.231.140.226', 'port': '8080', 'protocol': 2, 'nick_type': 2, 'speed': 0.51, 'area': '高匿_上海市腾讯云', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:47 mongo_pool.py [line:48] WARNING: 已存在的代理：111.231.140.226
+2019-10-27 16:35:47 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 27.208.67.127:8060
+2019-10-27 16:35:47 httpbin_validator.py [line:89] DEBUG: {'ip': '188.186.184.42', 'port': '53281', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '俄罗斯', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:47 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): www.66ip.cn:80
+2019-10-27 16:35:47 connectionpool.py [line:437] DEBUG: http://www.66ip.cn:80 "GET /2.html HTTP/1.1" 200 3739
+2019-10-27 16:35:47 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 77.70.115.104:8080
+2019-10-27 16:35:48 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 27.208.67.127:8060
+2019-10-27 16:35:49 httpbin_validator.py [line:89] DEBUG: {'ip': '27.208.67.127', 'port': '8060', 'protocol': -1, 'nick_type': -1, 'speed': -1, 'area': '高匿_山东省威海市联通', 'score': 50, 'disable_domains': []}
+2019-10-27 16:35:49 connectionpool.py [line:225] DEBUG: Starting new HTTP connection (1): 119.166.135.189:8060

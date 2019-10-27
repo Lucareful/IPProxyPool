@@ -1,0 +1,532 @@
+2019-10-27 12:15:50 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 12:16:00 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 12:16:00 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 12:16:00] "GET /random?protocal=http&domain=taobao.com HTTP/1.1" 500 -
+2019-10-27 12:16:13 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 12:16:13 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 12:16:13] "GET /random?protocal=http HTTP/1.1" 500 -
+2019-10-27 12:16:28 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 12:16:28 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 12:16:28] "GET /random?protocal=https HTTP/1.1" 500 -
+2019-10-27 12:16:34 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 12:16:34 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 12:16:34] "GET /random HTTP/1.1" 500 -
+2019-10-27 14:22:38 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 14:22:45 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:22:45 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:22:45] "GET /random HTTP/1.1" 500 -
+2019-10-27 14:22:46 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:22:46] "GET /favicon.ico HTTP/1.1" 404 -
+2019-10-27 14:23:00 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:23:00] "GET /random？protocal=2 HTTP/1.1" 404 -
+2019-10-27 14:23:18 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:23:18] "GET /random？protocol=2 HTTP/1.1" 404 -
+2019-10-27 14:23:25 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:23:25 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:23:25] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 14:23:39 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:23:39 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:23:39] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 14:23:56 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:23:56 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:23:56] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 14:23:57 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:23:57 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:23:57] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 14:24:17 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 14:24:23 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:24:23 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:24:23] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 14:24:26 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:24:26 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:24:26] "GET /random?protocol=1 HTTP/1.1" 500 -
+2019-10-27 14:25:12 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:25:12 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:25:12] "GET /random?protocol=1 HTTP/1.1" 500 -
+2019-10-27 14:26:45 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:26:45 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:26:45] "GET /random?protocol=1 HTTP/1.1" 500 -
+2019-10-27 14:27:46 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:27:46 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:27:46] "GET /random?protocol=1 HTTP/1.1" 500 -
+2019-10-27 14:27:52 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:27:52 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:27:52] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 14:28:10 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 57, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 129, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 14:28:10 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 14:28:10] "GET /random?protocol=2 HTTP/1.1" 500 -
+2019-10-27 15:09:49 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 15:09:49 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:09:49 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:09:49] "GET /random?protocal=http HTTP/1.1" 500 -
+2019-10-27 15:09:59 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:09:59 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:09:59] "GET /random?protocol=https HTTP/1.1" 500 -
+2019-10-27 15:10:08 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:10:08 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:08] "GET /random?protocol=http HTTP/1.1" 500 -
+2019-10-27 15:10:20 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:20] "GET /proxies?protocol=http HTTP/1.1" 200 -
+2019-10-27 15:10:23 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:23] "GET /proxies?protocol=https HTTP/1.1" 200 -
+2019-10-27 15:10:34 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:34] "GET /proxies?protocol HTTP/1.1" 200 -
+2019-10-27 15:10:36 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:36] "GET /proxies?protocol HTTP/1.1" 200 -
+2019-10-27 15:10:42 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:42] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:10:57 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:57] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:10:58 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:10:58] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:11:19 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:11:19] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:11:31 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:11:31] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:11:44 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 15:11:48 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:11:48] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:12:03 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:12:03] "GET /proxies?pro HTTP/1.1" 200 -
+2019-10-27 15:12:12 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:12:12] "GET /proxies?protocol HTTP/1.1" 200 -
+2019-10-27 15:12:16 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:12:16] "GET /proxies?protocol=http HTTP/1.1" 200 -
+2019-10-27 15:12:19 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:12:19] "GET /proxies?protocol=https HTTP/1.1" 200 -
+2019-10-27 15:14:47 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:14:47] "GET /proxies?protocol=https HTTP/1.1" 200 -
+2019-10-27 15:47:27 _internal.py [line:122] INFO:  * Running on http://0.0.0.0:16888/ (Press CTRL+C to quit)
+2019-10-27 15:47:51 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:47:51] "GET /proxies HTTP/1.1" 200 -
+2019-10-27 15:47:58 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:47:58 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:47:58] "GET /random HTTP/1.1" 500 -
+2019-10-27 15:48:26 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:48:26] "GET /disable_domain HTTP/1.1" 200 -
+2019-10-27 15:48:53 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:48:53 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:48:53] "GET /random HTTP/1.1" 500 -
+2019-10-27 15:48:58 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:48:58 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:48:58] "GET /random HTTP/1.1" 500 -
+2019-10-27 15:49:51 app.py [line:1891] ERROR: Exception on /random [GET]
+Traceback (most recent call last):
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\IPPeoxyPool\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/IPPeoxyPool/core/proxy_api.py", line 59, in random
+    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
+  File "E:\IPPeoxyPool\core\db\mongo_pool.py", line 128, in random_proxy
+    return random.choice(proxy_list)
+  File "D:\Python\lib\random.py", line 258, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+2019-10-27 15:49:51 _internal.py [line:122] INFO: 127.0.0.1 - - [27/Oct/2019 15:49:51] "GET /random HTTP/1.1" 500 -
